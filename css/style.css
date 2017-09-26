@@ -245,6 +245,49 @@ section {
     }
 }
 
+@media only screen and (max-height: 560px) {
+
+    .centered-container .container{
+        margin: auto;
+        max-width: 300px;
+    }
+    .text-container .container {
+        padding-bottom: 0;
+    }
+    .horizon-prev, .horizon-next {
+        visibility: hidden;
+    }
+
+    .one-line-xs {
+        width: 50%;
+        float: left;
+    }
+    .carousel-container {
+        height: 140px!important;
+    }
+    .form-area input{
+        font-size: 1em;
+        padding:  0 6px 0 6px;
+    }
+    .form-area textarea{
+        font-size: 1em;
+    }
+
+    body {
+        font-size: 0.5em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 1.0em;
+    }
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------*/
 #full-size-logo {
     width: 700px;
