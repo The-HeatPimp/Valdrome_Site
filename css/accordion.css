@@ -1,0 +1,74 @@
+.cAccordion {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+}
+
+.cPanel-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+
+}
+
+.cPanel-collapse.opened {
+    z-index: 10;
+    transition-duration:0.5s;
+}
+
+.cPanel-title {
+    margin: 0;
+    height: 100%;
+    padding: 2px;
+}
+
+.cPanel-heading {
+    height: 30px;
+    border : solid rgba(0, 0, 0, 0.2);
+    border-width: 1px 1px 0 1px;
+    background-color: white;
+    padding: 5px;
+    font-size: 15px !important;
+}
+.cPanel:last-child .cPanel-heading { /* les trois derniers enfants */
+    border-width: 1px 1px 1px 1px;
+}
+
+.cPanel-heading h4, .cPanel-heading i  {
+    font-size: 15px !important;
+}
+
+.cPanel-body {
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    z-index: 10;
+    border : solid rgba(0, 0, 0, 0.2);
+    border-width: 1px 1px 1px 1px;
+}
+.cPanel:last-child .cPanel-body{ /* les trois derniers enfants */
+    border-width: 0 1px 1px 1px;
+}
+
+.cPanel {
+    position: absolute;
+    width: 100%;
+    transition: top 0.3s ease-out;
+    -webkit-transition: top 0.3s ease-out;
+}
+.cPanel i {
+    transition: transform 0.3s ease-out;
+    color: #fe4641;
+}
+.rotated {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);}
+

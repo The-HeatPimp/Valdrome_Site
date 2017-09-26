@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="application/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="accordion.js"></script>
+
+    <script type="text/javascript" src="jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/accordion.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+<header data-role="header" id="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#section-section1"><img src="images/logo-simple.png"
+                                                                      alt="Valdrome mécanique"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="slide-accessors" class="nav navbar-nav">
+                    <li id="slide-accessor-1" class="active">
+                        <a href="#section-section1"><span>Notre société</span></a>
+                    </li>
+                    <li id="slide-accessor-2">
+                        <a href="#section-section2"><span>Prestations et services</span></a>
+                    </li>
+                    <li id="slide-accessor-3">
+                        <a href="#section-section3"><span>Nous contacter</span></a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<div class="horizon-prev"><img src="images/l-arrow.png"></div>
+<div class="horizon-next"><img src="images/r-arrow.png"></div>
+
+<section data-role="section" id="section-section1">
+    <div class="text-container fill-container centered-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12  hidden-xs">
+                    <img id="full-size-logo" src="images/logo-full-size.png">
+                </div>
+                <div class="col-sm-12 left-pad">
+                    <h1 class="key-title">Mécanique industrielle de précision</h1>
+                    <p>25 ans d'experiences</p>
+                </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-12 left-pad">
+                            <ul class="content-list">
+                                <li>Production à l'unité ou en série</li>
+                                <li>Fraisage</li>
+                                <li>Tournage</li>
+                                <li>Electro-érosion à fil</li>
+                                <li>Petite mécano-soudire</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <div id="address-bloc">
+                                <p class="one-line-xs">Les Grandes Vignes,</p>
+                                <p class="one-line-xs"> 26400 Grane, France</p>
+                                <h2><span class="hidden-sm hidden-xs">Tel : </span>09.61.43.87.70</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div>
+                        <iframe width="250" height="250" frameborder="0" style="border:2px solid gray"
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6Z8_NJpatRIR8pHevO16h8U&key=AIzaSyBi8Ja1I6LANILDb0JAcOQbWaG82a2DyCc"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section data-role="section" id="section-section2">
+    <div class="text-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>
+                        Parc Machine
+                    </h1>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="cAccordion">
+                        <div class="cPanel-group" id="cPanel-grp-1">
+                            <div class="cPanel" data-pos="1">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                            <div class="cPanel" data-pos="2">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                            <div class="cPanel" data-pos="3">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                            <div class="cPanel" data-pos="4">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="cAccordion">
+                        <div class="cPanel-group" id="cPanel-grp-2">
+                            <div class="cPanel" data-pos="1">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                            <div class="cPanel" data-pos="2">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                       Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                            <div class="cPanel" data-pos="3">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                            <div class="cPanel" data-pos="4">
+                                <div class="cPanel-heading">
+                                    <h4 class="cPanel-title">
+                                        Collapsible panel  <i class="indicator glyphicon glyphicon-menu-right  pull-right"></i>
+                                    </h4>
+                                </div>
+                                <div class="cPanel-collapse">
+                                    <div class="cPanel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed efficitur massa, sed viverra neque</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="text-container fill-container ">
+            <div class="container">
+                <h1>
+                    Exemple de réalisation
+                </h1>
+                <div class=" carousel-container">
+                    <div class="row">
+                        <!-- Carousel -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"
+                             data-interval="10000">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+
+                                    <div class="col-sm-6  hidden-xs ">
+                                        <img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg"
+                                             alt="First slide">
+                                    </div>
+                                    <div class="col-sm-6 header-text col-xs-12">
+                                        <h2>
+                                            <span>Welcome to <strong>LOREM IPSUM</strong></span>
+                                        </h2>
+                                        <br>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-sm-6  hidden-xs ">
+                                        <img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg"
+                                             alt="First slide">
+                                    </div>
+                                    <div class="col-sm-6 header-text col-xs-12">
+                                        <h2>
+                                            <span>Welcome to <strong>LOREM IPSUM</strong></span>
+                                        </h2>
+                                        <br>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-sm-6  hidden-xs ">
+                                        <img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg"
+                                             alt="First slide">
+                                    </div>
+                                    <div class="col-sm-6 header-text col-xs-12">
+                                        <h2>
+                                            <span>Welcome to <strong>LOREM IPSUM</strong></span>
+                                        </h2>
+                                        <br>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div><!-- /carousel -->
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+<section data-role="section" id="section-section3">
+    <div class="text-container fill-container">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="form-area">
+                    <form role="form">
+                        <h1>Formulaire de contact</h1>
+                        <p>Envoyer nous un mail via ce formulaire ou à l'adresse mail <b>biz.biz@gmail.com</b></p>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="N° tel">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                        <textarea class="form-control" type="textarea" id="message" placeholder="Message"
+                                  maxlength="140" rows="7"></textarea>
+                            <span class="help-block"><p id="characterLeft" class="help-block ">errors displayer</p></span>
+                        </div>
+
+                        <button type="button" id="submit" name="submit" class="btn btn-submit pull-right">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer data-role="footer" id="footer"></footer>
+
+<script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
+
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+
+</script>
+
+</body>
+</html>
